@@ -1,7 +1,8 @@
 var nodemailer = require("nodemailer");
 var fs = require('fs-extra');
-var auth = fs.readJsonSync('auth.conf.json');
-var email = fs.readJsonSync('email.conf.json');
+var path = require('path');
+var auth = fs.readJsonSync(path.join(__dirname, 'auth.conf.json'));
+var email = fs.readJsonSync(path.join(__dirname, 'email.conf.json'));
 
 var smtpTransport = nodemailer.createTransport("SMTP",{
 	service: "Gmail",  // sets automatically host, port and connection security settings
