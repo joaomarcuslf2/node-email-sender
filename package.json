@@ -1,0 +1,17 @@
+{
+  "name": "email-sender",
+  "version": "1.0.0",
+  "description": "This application should send a e-mail every modification",
+  "main": "app.js",
+  "dependencies": {
+    "fs-extra": "^1.0.0",
+    "nodemailer": "^0.7.1",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "João Marcus Fernandes <jmarcusfernandes@gmail.com>",
+  "license": "ISC"
+}
